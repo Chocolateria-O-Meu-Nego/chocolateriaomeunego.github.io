@@ -1,0 +1,22 @@
+<div class="m-modal-splashscreen">
+  <style>
+    @keyframes loading {
+      from {
+        transform: scale(0.8);
+      }
+  
+      to {
+        transform: scale(1);
+      }
+    }
+    
+    .m-modal-splashscreen {
+      position: absolute;top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #F4F3DC; transition: 1s opacity ease;
+    }
+  
+    .m-modal-splashscreen__logo {
+      animation: loading infinite alternate ease 1s;
+    }
+  </style>
+  <img class="m-modal-splashscreen__logo" width="240" height="240" loading="lazy" src="/assets/img/logo.svg" alt="Chocolateria Ô, Meu Nego!">
+</div>
