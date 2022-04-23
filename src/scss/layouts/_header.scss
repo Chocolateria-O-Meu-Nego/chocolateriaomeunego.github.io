@@ -1,3 +1,13 @@
+@keyframes floating {
+  from {
+    transform: translateY(-60px);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}
+
 .l-header {
   background-color: var(--color-medium);
   
@@ -86,7 +96,27 @@
   }
 
   &-banner {
-    margin: 104px auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 80px 0;
+
+    &__chocolate {
+      position: absolute;
+      top: 72px;
+      left: -120px;
+      animation: floating 10s ease infinite alternate;
+      pointer-events: none;
+    }
+
+    &__peanut {
+      position: absolute;
+      width: 480px;
+      bottom: -48px;
+      right: -72px;
+      animation: floating 20s ease infinite alternate;
+      pointer-events: none;
+    }
 
     &__title {
       margin: 0 auto 40px;
