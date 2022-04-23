@@ -1,0 +1,25 @@
+.m-list-products {
+  &-header {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+
+    &__title { 
+      margin: 0;
+      font-size: 80px;
+      color: var(--color-tertiary);
+      text-shadow: $text-shadow;
+      text-transform: uppercase;
+    }
+    
+    &__subtitle {
+      margin: 0;
+      margin-bottom: -16px;
+      margin-left: 24px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 48px;
+      color: var(--color-secondary);
+      text-shadow: $text-shadow;
+      text-transform: lowercase;
+    }
+  }
+}
