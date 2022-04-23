@@ -1,0 +1,80 @@
+:root {
+	--color-primary: #583619;
+	--color-primary-rgb: 88,54,25;
+	--color-primary-contrast: #ffffff;
+	--color-primary-contrast-rgb: 255,255,255;
+	--color-primary-shade: #4d3016;
+	--color-primary-tint: #694a30;
+
+	--color-secondary: #7FC7D3;
+	--color-secondary-rgb: 127,199,211;
+	--color-secondary-contrast: #000000;
+	--color-secondary-contrast-rgb: 0,0,0;
+	--color-secondary-shade: #70afba;
+	--color-secondary-tint: #8ccdd7;
+
+	--color-tertiary: #CC1761;
+	--color-tertiary-rgb: 204,23,97;
+	--color-tertiary-contrast: #ffffff;
+	--color-tertiary-contrast-rgb: 255,255,255;
+	--color-tertiary-shade: #b41455;
+	--color-tertiary-tint: #d12e71;
+
+	--color-success: #45bf76;
+	--color-success-rgb: 69,191,118;
+	--color-success-contrast: #000000;
+	--color-success-contrast-rgb: 0,0,0;
+	--color-success-shade: #3da868;
+	--color-success-tint: #58c584;
+
+	--color-warning: #ffc409;
+	--color-warning-rgb: 255,196,9;
+	--color-warning-contrast: #000000;
+	--color-warning-contrast-rgb: 0,0,0;
+	--color-warning-shade: #e0ac08;
+	--color-warning-tint: #ffca22;
+
+	--color-danger: #eb445a;
+	--color-danger-rgb: 235,68,90;
+	--color-danger-contrast: #ffffff;
+	--color-danger-contrast-rgb: 255,255,255;
+	--color-danger-shade: #cf3c4f;
+	--color-danger-tint: #ed576b;
+
+	--color-medium: #F4F3DC;
+	--color-medium-rgb: 244,243,220;
+	--color-medium-contrast: #000000;
+	--color-medium-contrast-rgb: 0,0,0;
+	--color-medium-shade: #d7d6c2;
+	--color-medium-tint: #f5f4e0;
+
+	--color-light: #ffffff;
+	--color-light-rgb: 255,255,255;
+	--color-light-contrast: #000000;
+	--color-light-contrast-rgb: 0,0,0;
+	--color-light-shade: #e0e0e0;
+	--color-light-tint: #ffffff;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth !important;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  font-family: 'League Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+}

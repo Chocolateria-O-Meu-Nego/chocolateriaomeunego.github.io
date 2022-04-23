@@ -1,0 +1,60 @@
+.m-card-cart {
+  display: flex;
+  padding: 16px 12px;
+  border-radius: 8px;
+  color: var(--color-medium);
+
+  &:hover {
+    background-color: rgba(255,255,255,.1);
+    color: var(--color-primary);
+    
+    .m-card-cart__infos a {
+      color: var(--color-primary);
+    }
+  }
+  
+  &__image {
+    position: relative;
+    display: block;
+    margin-right: 16px;
+    
+    img {
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    }
+
+    span {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      color: var(--color-light);
+      background-color: var(--color-tertiary);
+      text-align: center;
+      line-height: 16px;
+      font-size: 14px;
+      box-shadow: 0 0 0 2px var(--color-secondary);
+    }
+  }
+
+  &__infos {
+    margin-right: 32px;
+
+    a {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 400;
+      font-size: 22px;
+      color: currentColor;
+      text-decoration: none;
+    }
+  }
+
+  &__total {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+}

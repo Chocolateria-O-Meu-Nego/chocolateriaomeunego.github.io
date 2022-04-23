@@ -1,6 +1,96 @@
-<header class="l-header">
-  <a href="/" class="l-header-logo">
-    <img src="/assets/img/logo.svg" alt="Chocolateria Ô, Meu Nego!" class="l-header-logo__image">
-    <h1>Chocolateria Ô, Meu Nego!</h1>
-  </a>
+<header class="l-header" role="banner">
+  <div class="l-header-navbar">
+    <nav class="l-header-nav">
+      <div class="m-list-menu">
+        <ul>
+          <li>
+            <a href="/produtos/">
+              Produtos
+              <i class="uil uil-angle-down"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/sobre/">Sobre</a>
+          </li>
+          <li>
+            <a href="/contato/">Contato</a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="/" class="l-header__logo">
+        <img class="l-header__logo__image" src="/assets/img/logo.svg" alt="Chocolateria Ô, Meu Nego!" width="104" height="104" loading="lazy" class="l-header-logo__image">
+    
+        {% if page.url == '/' %}
+        <h1 class="l-header__logo__title">Chocolateria Ô, Meu Nego!</h1>
+        {% else %}
+        <h2 class="l-header__logo__title">Chocolateria Ô, Meu Nego!</h2>
+        {% endif %}
+      </a>
+
+      <div class="l-header-nav__actions">
+        <ul class="l-header-nav__social">
+          <li>
+            <a href="https://instagram.com/chocolateriaomeunego" target="_blank" rel="noreferrer noopeneer" aria-label="Instagram">
+              <i aria-hidden="true" class="uil uil-instagram"></i>
+            </a>
+          </li>
+        </ul>
+  
+        <div class="l-header-nav__cart">
+          <a class="m-button-cart" href="/carrinho/">
+            <i class="uil uil-shopping-bag"></i>
+            <span>04</span>
+          </a>
+
+          <div class="m-list-cart">
+            <ol>
+              <li>
+                <div class="m-card-cart">
+                  <a href="#" class="m-card-cart__image">
+                    <img src="https://static-images.ifood.com.br/image/upload/t_medium/pratos/508bee51-fe75-4a7e-98a7-ed658464e6dc/202202241352_4324_i.jpg" width="80" height="80" loading="lazy" alt="">
+                    <span>2</span>
+                  </a>
+
+                  <div class="m-card-cart__infos">
+                    <a href="#">Copo da Felicidade de Ninho com Nutella</a>
+                    <span>R$ 32,00</span>
+                  </div>
+
+                  <span class="m-card-cart__total">R$ 64,00</span>
+                </div>
+              </li>
+              <li>
+                <div class="m-card-cart">
+                  <a href="#" class="m-card-cart__image">
+                    <img src="https://static-images.ifood.com.br/image/upload/t_medium/pratos/508bee51-fe75-4a7e-98a7-ed658464e6dc/202202241352_4324_i.jpg" width="80" height="80" loading="lazy" alt="">
+                    <span>2</span>
+                  </a>
+
+                  <div class="m-card-cart__infos">
+                    <a href="#">Copo da Felicidade de Ninho com Nutella</a>
+                    <span>R$ 32,00</span>
+                  </div>
+
+                  <span class="m-card-cart__total">R$ 64,00</span>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="l-header-banner">
+    <h2 class="l-header-banner__title">
+      <span>Cheios de</span>
+      <strong>paixão</strong>
+      <span>pelo chocolate</span>
+    </h2>
+
+    <a href="/produtos/" class="l-header-banner__button">
+      <span>ver produtos</span>
+    </a>
+  </div>
 </header>

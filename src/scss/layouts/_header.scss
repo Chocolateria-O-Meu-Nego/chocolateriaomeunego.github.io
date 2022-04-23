@@ -1,0 +1,134 @@
+.l-header {
+  background-color: var(--color-medium);
+  
+  &-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 80px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px 0 0;
+  }
+
+  &__logo {
+    display: block;
+    width: 104px;
+    height: 104px;
+
+    &__image {
+      display: block;
+      width: 100%;
+    }
+
+    &__title {
+      display: none;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .m-list-menu {
+      width: calc(50% - 52px);
+    }
+
+    &__social {
+      margin: 0 24px;
+      padding: 0;
+      list-style: none;
+
+      li:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      a {
+        color: var(--color-tertiary);
+        font-size: 24px;
+        
+        &:hover {
+          color: var(--color-tertiary-tint);
+        }
+        
+        &:hover {
+          color: var(--color-tertiary-shade);
+        }
+      }
+    }
+
+    &__actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: calc(50% - 52px);
+    }
+    
+    &__cart {
+      position: relative;
+
+      &:hover {
+        .m-button-cart i {
+          border-radius: 50% 50% 0 0;
+        }
+
+        .m-list-cart {
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+    }
+  }
+
+  &-banner {
+    margin: 104px auto;
+
+    &__title {
+      margin: 0 auto 40px;
+      font-size: 104px;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      text-shadow: $text-shadow;
+  
+      strong {
+        display: block;
+        margin-top: -32px;
+        font-family: 'Dancing Script', cursive;
+        text-transform: lowercase;
+      }
+    }
+
+    &__button {
+      display: block;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 160px;
+      font-size: 32px;
+      margin: 0 auto;
+      background-color: var(--color-tertiary);
+      color: var(--color-medium);
+      text-decoration: none;
+      transition: .4s transform ease, .4s box-shadow ease, .4s background-color ease;
+
+      &:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: $text-shadow;
+        background-color: var(--color-tertiary-tint);
+      }
+    
+      &:active {
+        transform: none;
+        box-shadow: none;
+        background-color: var(--color-tertiary-shade);
+      }
+    }
+  }
+}

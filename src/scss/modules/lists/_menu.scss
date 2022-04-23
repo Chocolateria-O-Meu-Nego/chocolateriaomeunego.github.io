@@ -1,0 +1,31 @@
+.m-list-menu {
+  
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  a {
+    color: var(--color-primary);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s text-shadow ease, .2s color ease;
+
+    &:hover {
+      color: var(--color-primary-tint);
+      text-shadow: $text-shadow;
+    }
+
+    &:active {
+      color: var(--color-primary-shade);
+      text-shadow: none;
+    }
+  }
+}
