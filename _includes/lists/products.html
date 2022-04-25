@@ -10,16 +10,28 @@
     <li class="swiper-slide">
       <a href="{{ product.url }}" class="m-card-product">
         <img src="/assets/img/static/products/{{ product.title | slugify }}.webp" alt="{{ product.title }}" class="m-card-product__image">
+
         <div class="m-card-product__content">
-          <h4 class="m-card-product__title">
+          <h5 class="m-card-product__title">
             {{ product.title }}
-          </h4>
+          </h5>
           <p>{{ product.description }}</p>
         </div>
+
         <div class="m-card-product__footer">
           <div class="m-card-product__price">
             <span>R$</span>
             <strong>{{ product.price }}</strong>
+          </div>
+
+          <div class="m-card-product__actions">
+            <button class="m-card-product__minus">
+              <i class="uil uil-minus"></i>
+            </button>
+            <input value="99" type="text">
+            <button class="m-card-product__plus">
+              <i class="uil uil-plus"></i>
+            </button>
           </div>
         </div>
       </a>

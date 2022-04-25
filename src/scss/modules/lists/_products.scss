@@ -20,13 +20,14 @@
     
     &__subtitle {
       text-transform: uppercase;
-      font-size: 22px;
-      font-weight: 400;
-      border: 1px solid var(--color-primary-tint);
+      font-family: $font-family;
+      font-size: 16px;
+      font-weight: 700;
+      border: 2px solid var(--color-primary);
       display: block;
-      padding: 8px 64px;
+      padding: 8px 56px;
       border-radius: 24px;
-      color: var(--color-primary-tint);
+      color: var(--color-primary);
       margin: 0 auto 16px;
       position: relative;
 
@@ -49,7 +50,7 @@
 
   ul {
     margin: 0;
-    padding: 0;
+    padding: 0 40px 16px 40px;
     list-style: none;
   }
 
