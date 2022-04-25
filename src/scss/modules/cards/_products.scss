@@ -1,0 +1,50 @@
+.m-card-product {
+  display: block;
+  margin-top: 32px;
+  padding: 8px;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: var(--color-medium);
+  border-radius: 16px;
+
+  &__image {
+    display: block;
+    width: 240px;
+    height: 160px;
+    margin: -32px auto 16px;
+    object-fit: cover;
+    border-radius: 16px;
+    background-color: var(--color-medium);
+  }
+
+  &__title {
+    margin: 0 auto 8px;
+    padding: 0 8px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+  }
+  
+  &__content {
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  &__price {
+    color: var(--color-medium);
+    line-height: 24px;
+
+    span {
+      display: inline-block;
+      margin-right: 4px;
+      font-size: 16px;
+      opacity: .5;
+    }
+    
+    strong {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+}
