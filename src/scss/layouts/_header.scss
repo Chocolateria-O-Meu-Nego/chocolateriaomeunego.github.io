@@ -99,6 +99,10 @@
     margin: 0 auto;
     padding: 80px 0;
 
+    @media (min-width: 1024px) {
+      padding: 104px 0;
+    }
+
     &__chocolate {
       position: absolute;
       top: 72px;
@@ -117,45 +121,27 @@
     }
 
     &__title {
-      margin: 0 auto 40px;
-      font-size: 104px;
+      margin: 0 auto 80px;
+      font-size: 56px;
       text-align: center;
       text-transform: uppercase;
       color: var(--color-primary);
       text-shadow: $text-shadow;
+      
+      @media (min-width: 1024px) {
+        margin: 0 auto 104px;
+        font-size: 136px;
+      }
   
       strong {
         display: block;
-        margin-top: -32px;
+        margin-top: -24px;
         font-family: 'Dancing Script', cursive;
         text-transform: lowercase;
-      }
-    }
 
-    &__button {
-      display: block;
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 160px;
-      font-size: 32px;
-      margin: 0 auto;
-      background-color: var(--color-tertiary);
-      color: var(--color-medium);
-      text-decoration: none;
-      transition: .4s transform ease, .4s box-shadow ease, .4s background-color ease;
-
-      &:hover {
-        transform: translate(-4px, -4px);
-        box-shadow: $text-shadow;
-        background-color: var(--color-tertiary-tint);
-      }
-    
-      &:active {
-        transform: none;
-        box-shadow: none;
-        background-color: var(--color-tertiary-shade);
+        @media (min-width: 1024px) {
+          margin-top: -72px;
+        }
       }
     }
   }
