@@ -2,6 +2,10 @@
   <div class="l-header-navbar">
     <nav class="l-header-nav">
       <div class="m-list-menu">
+        <button class="m-button -menu">
+          <i class="uil uil-bars"></i>
+        </button>
+
         <ul>
           <li>
             <a href="/produtos/">
@@ -29,54 +33,13 @@
       </a>
 
       <div class="l-header-nav__actions">
-        <ul class="l-header-nav__social">
-          <li>
-            <a href="https://instagram.com/chocolateriaomeunego" target="_blank" rel="noreferrer noopeneer" aria-label="Instagram">
-              <i aria-hidden="true" class="uil uil-instagram"></i>
-            </a>
-          </li>
-        </ul>
-  
         <div class="l-header-nav__cart">
-          <a class="m-button-cart" href="/carrinho/">
+          <a class="m-button -cart" href="/carrinho/">
             <i class="uil uil-shopping-bag"></i>
             <span>04</span>
           </a>
 
-          <div class="m-list-cart">
-            <ol>
-              <li>
-                <div class="m-card-cart">
-                  <a href="#" class="m-card-cart__image">
-                    <img src="https://static-images.ifood.com.br/image/upload/t_medium/pratos/508bee51-fe75-4a7e-98a7-ed658464e6dc/202202241352_4324_i.jpg" width="80" height="80" loading="lazy" alt="">
-                    <span>2</span>
-                  </a>
-
-                  <div class="m-card-cart__infos">
-                    <a href="#">Copo da Felicidade de Ninho com Nutella</a>
-                    <span>R$ 32,00</span>
-                  </div>
-
-                  <span class="m-card-cart__total">R$ 64,00</span>
-                </div>
-              </li>
-              <li>
-                <div class="m-card-cart">
-                  <a href="#" class="m-card-cart__image">
-                    <img src="https://static-images.ifood.com.br/image/upload/t_medium/pratos/508bee51-fe75-4a7e-98a7-ed658464e6dc/202202241352_4324_i.jpg" width="80" height="80" loading="lazy" alt="">
-                    <span>2</span>
-                  </a>
-
-                  <div class="m-card-cart__infos">
-                    <a href="#">Copo da Felicidade de Ninho com Nutella</a>
-                    <span>R$ 32,00</span>
-                  </div>
-
-                  <span class="m-card-cart__total">R$ 64,00</span>
-                </div>
-              </li>
-            </ol>
-          </div>
+          {% include lists/cart.html %}
         </div>
       </div>
     </nav>
@@ -92,7 +55,7 @@
       <span>pelo chocolate</span>
     </h2>
 
-    <a href="/produtos/" class="m-button-circle">
+    <a href="/produtos/" class="m-button -circle">
       <span>ver produtos</span>
     </a>
   </div>

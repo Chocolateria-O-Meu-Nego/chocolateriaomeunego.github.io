@@ -1,22 +1,16 @@
-@keyframes floating {
-  from {
-    transform: translateY(-60px);
-  }
-
-  to {
-    transform: translateY(20px);
-  }
-}
-
 .l-header {
   &-navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 80px);
+    width: calc(100% - 48px);
     max-width: 1440px;
     margin: 0 auto;
     padding: 24px 0 0;
+    
+    @media (min-width: 1024px) {
+      width: calc(100% - 80px);
+    }
   }
 
   &__logo {
@@ -42,6 +36,16 @@
 
     .m-list-menu {
       width: calc(50% - 52px);
+      display: flex;
+      align-items: center;
+    }
+
+    .m-button.-menu {
+      display: flex;
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
     }
 
     &__social {
@@ -107,7 +111,6 @@
       position: absolute;
       top: 72px;
       left: -120px;
-      animation: floating 10s ease infinite alternate;
       pointer-events: none;
     }
 
@@ -116,7 +119,6 @@
       width: 480px;
       bottom: -48px;
       right: -72px;
-      animation: floating 20s ease infinite alternate;
       pointer-events: none;
     }
 
