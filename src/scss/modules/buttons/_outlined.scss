@@ -1,0 +1,12 @@
+.m-button.-outlined {
+  padding: 12px 32px;
+  border: 2px solid currentColor;
+  font-family: $font-heading;
+  font-size: 24px;
+  line-height: 1;
+  border-radius: 32px;
+
+  @media (min-width: 1024px) {
+    font-size: 32px;
+  }
+}

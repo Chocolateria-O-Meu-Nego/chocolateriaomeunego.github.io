@@ -110,6 +110,7 @@
       position: absolute;
       top: 264px;
       left: -130px;
+      z-index: 1;
       width: 240px;
       height: auto;
       pointer-events: none;
@@ -129,6 +130,7 @@
       width: 280px;
       bottom: -212px;
       right: -180px;
+      z-index: 1;
       pointer-events: none;
       
       @media (min-width: 1024px) {
