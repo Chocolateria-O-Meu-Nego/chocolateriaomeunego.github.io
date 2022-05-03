@@ -1,11 +1,12 @@
-import swiper from './controllers/swiper';
+import Swiper, {Autoplay} from 'swiper';
+Swiper.use([Autoplay]);
 
 window.addEventListener('load', () => {
-  if(!!document.querySelector('.m-list-logos')) {
-    const $sliderLogos = document.querySelectorAll('.m-list-logos');
+  if(!!document.querySelector('.m-list.-logos')) {
+    const $sliderLogos = document.querySelectorAll('.m-list.-logos');
 
     $sliderLogos.forEach(item => {
-      swiper(item, {
+      const slider = new Swiper(item, {
         loop: true,
         freeMode: true,
         slidesPerView: 10,
@@ -14,15 +15,15 @@ window.addEventListener('load', () => {
           delay: 1000
         },
       });
-    })
+    });
   }
 
 
-  if(!!document.querySelector('.m-list-products')) {
-    const $swiperProducts = document.querySelectorAll('.m-list-products');
+  if(!!document.querySelector('.m-list.-products')) {
+    const $swiperProducts = document.querySelectorAll('.m-list.-products');
 
     $swiperProducts.forEach(item => {
-      swiper(item, {
+      const slider = new Swiper(item, {
         slidesPerView: 'auto',
         spaceBetween: 32,
         autoplay: {
@@ -30,5 +31,27 @@ window.addEventListener('load', () => {
         },
       });
     });
+  }
+
+  if(!!document.querySelector('.m-list.-highlights')) {
+    const $swiperHighlights = document.querySelectorAll('.m-list.-highlights');
+    const highlightsConfig = {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      autoplay: true
+    };
+
+    $swiperHighlights.forEach(item => {
+      const slider = new Swiper(item, highlightsConfig);
+      
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 1280) {
+          return slider.detroy();
+        }
+
+        return slider.init();
+      });
+    });
+
   }
 });

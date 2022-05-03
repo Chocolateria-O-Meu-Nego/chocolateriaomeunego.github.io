@@ -1,7 +1,21 @@
-.m-list-logos {
+.m-list.-logos {
+  position: relative;
   width: 100%;
   padding: 40px 0;
   background-color: var(--color-primary);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    width: calc(100% - 48px);
+    max-width: 1440px;
+    margin: 0 auto 40px;
+    border-top: 1px solid rgba(255,255,255,.1);
+  }
 
   .swiper-wrapper {
     padding: 0 48px;

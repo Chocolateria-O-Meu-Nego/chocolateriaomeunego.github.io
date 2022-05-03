@@ -1,4 +1,4 @@
-.m-card-cart {
+.m-card.-cart {
   display: flex;
   padding: 16px 12px;
   border-radius: 8px;
@@ -8,7 +8,7 @@
     background-color: rgba(255,255,255,.1);
     color: var(--color-primary);
     
-    .m-card-cart__infos a {
+    .m-card -cart__infos a {
       color: var(--color-primary);
     }
   }
