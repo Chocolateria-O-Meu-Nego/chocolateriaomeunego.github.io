@@ -44,13 +44,16 @@
 </head>
 <body>
   {% include modals/splashscreen.html %}
-  {% include header.html %}
-
-  <main class="l-main">
-    {{ content }}
-  </main>
-
-  {% include footer.html %}
+  
+  <div id="app">
+    {% include header.html %}
+  
+    <main class="l-main">
+      {{ content }}
+    </main>
+  
+    {% include footer.html %}
+  </div>
 
   <script src="/assets/js/main.js?{{site.time | date: '%s%N'}}"></script>
 </body>
