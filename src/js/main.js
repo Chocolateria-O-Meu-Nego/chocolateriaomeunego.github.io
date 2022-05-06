@@ -32,12 +32,12 @@ window.addEventListener('load', () => {
     });
   }
 
-  if(!!document.querySelector('.m-list.-highlights')) {
-    const $swiperHighlights = document.querySelectorAll('.m-list.-highlights');
+  if(!!document.querySelector('[data-swiper="highlights"]')) {
+    const $swiperHighlights = document.querySelectorAll('[data-swiper="highlights"]');
     
     $swiperHighlights.forEach(item => {
       swiper.destroyOnBreakpoint('1280px', item, {
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         spaceBetween: 24,
         autoplay: true
       });

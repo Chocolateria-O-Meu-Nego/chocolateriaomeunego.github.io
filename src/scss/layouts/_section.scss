@@ -1,0 +1,47 @@
+.l-section {
+  &.-dark {
+    position: relative;
+    background-color: var(--color-primary);
+    margin: 32px 0;
+    
+    @media (min-width: 1280px) {
+      margin: 160px 0;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: block;
+      height: 32px;
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: auto 100%;
+
+      @media (min-width: 1280px) {
+        height: 160px;
+      }
+    }
+
+    &::before {
+      top: -32px;
+      background-image: url('/assets/img/static/choco-border.svg');
+
+      @media (min-width: 1280px) {
+        top: -160px;
+      }
+    }
+
+    &::after {
+      bottom: -32px;
+      background-image: url('/assets/img/static/choco-border.svg');
+      transform: rotate(180deg);
+
+      @media (min-width: 1280px) {
+        bottom: -160px;
+      }
+    }
+  }
+}
