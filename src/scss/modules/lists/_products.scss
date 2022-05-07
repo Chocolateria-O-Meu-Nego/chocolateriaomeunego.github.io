@@ -6,16 +6,20 @@
     justify-content: center;
     position: relative;
     width: calc(100% - 80px);
-    margin: 0 auto;
+    margin: 0 auto 40px;
 
     &__title { 
-      font-size: 56px;
+      font-size: 40px;
       color: var(--color-primary);
       text-transform: uppercase;
       text-align: center;
       letter-spacing: 1px;
       text-shadow: $text-shadow;
       margin: 0;
+
+      @media (min-width: 1280px) {
+        font-size: 56px;
+      }
     }
     
     &__subtitle {
@@ -25,11 +29,15 @@
       font-weight: 700;
       border: 2px solid var(--color-primary);
       display: block;
-      padding: 8px 56px;
+      padding: 8px 40px;
       border-radius: 24px;
       color: var(--color-primary);
       margin: 0 auto 16px;
       position: relative;
+      
+      @media (min-width: 1280px) {
+        padding: 8px 48px;
+      }
 
       &::before {
         content: '';
