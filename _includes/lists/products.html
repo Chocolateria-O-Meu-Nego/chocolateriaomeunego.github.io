@@ -9,7 +9,7 @@
     {% if product.category == include.title %}
     <li class="swiper-slide">
       <a href="{{ product.url }}" class="m-card -product">
-        <img src="/assets/img/static/products/{{ product.title | slugify }}.webp" alt="{{ product.title }}" class="m-card -product__image">
+        <img src="/assets/img/static/products/{{ product.title | slugify }}.webp" onerror="if (this.src != '/assets/img/logos/default.png') this.src = '/assets/img/logos/default.png';" alt="{{ product.title }}" width="240" height="160" loading="lazy" class="m-card -product__image">
 
         <div class="m-card -product__content">
           <h5 class="m-card -product__title">

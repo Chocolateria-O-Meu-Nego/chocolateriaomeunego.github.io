@@ -25,9 +25,7 @@ window.addEventListener('load', () => {
       swiper.init(item, {
         slidesPerView: 'auto',
         spaceBetween: 32,
-        autoplay: {
-          delay: 1000
-        },
+        autoplay: true
       });
     });
   }
