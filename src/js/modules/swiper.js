@@ -1,5 +1,5 @@
-import Swiper, {Autoplay} from 'swiper';
-Swiper.use([Autoplay]);
+import Swiper, {Autoplay, Navigation} from 'swiper';
+Swiper.use([Autoplay, Navigation]);
 
 const swiper = {
    destroyOnBreakpoint(size, el, config) {

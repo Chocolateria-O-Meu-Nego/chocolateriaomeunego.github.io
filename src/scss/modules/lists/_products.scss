@@ -1,4 +1,5 @@
 .m-list.-products {
+
   &-header {
     display: flex;
     flex-direction: column;
@@ -65,5 +66,44 @@
 
   li {
     max-width: 256px;
+  }
+
+  .swiper-arrow {
+    position: absolute;
+    z-index: 1;
+    top: calc(124px + 50%);
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    background-color: var(--color-tertiary);
+    color: var(--color-light);
+
+    &:hover {
+      background-color: var(--color-tertiary-tint);
+    }
+  
+    &:active {
+      background-color: var(--color-tertiary-shade);
+    }
+
+    &.swiper-button-disabled {
+      background-color: var(--color-medium-shade);
+      cursor: not-allowed;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 136px;
+  }
+
+  .swiper-button-next {
+    right: 136px;
   }
 }

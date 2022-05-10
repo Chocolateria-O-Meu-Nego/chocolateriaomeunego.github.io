@@ -25,7 +25,11 @@ window.addEventListener('load', () => {
       swiper.init(item, {
         slidesPerView: 'auto',
         spaceBetween: 32,
-        autoplay: true
+        autoplay: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
       });
     });
   }
@@ -37,7 +41,9 @@ window.addEventListener('load', () => {
       swiper.destroyOnBreakpoint('1280px', item, {
         slidesPerView: 'auto',
         spaceBetween: 24,
-        autoplay: true
+        autoplay: {
+          delay: 8000
+        },
       });
     });
   }
